@@ -1,0 +1,14 @@
+USE MigrationTestDB;
+GO
+
+DELETE FROM OrderDetails;
+DELETE FROM Orders;
+DELETE FROM Products;
+DELETE FROM Employees;
+DELETE FROM Customers;
+
+DBCC CHECKIDENT ('OrderDetails', RESEED, 0);
+DBCC CHECKIDENT ('Orders', RESEED, 0);
+DBCC CHECKIDENT ('Products', RESEED, 0);
+DBCC CHECKIDENT ('Employees', RESEED, 0);
+DBCC CHECKIDENT ('Customers', RESEED, 0);

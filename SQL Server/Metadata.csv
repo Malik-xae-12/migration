@@ -1,0 +1,8 @@
+﻿Id,DatabaseName,SourceSchemaName,SourceTableName,BronzeSchemaName,BronzeTableName,IncLoadType,CreatedWaterMarkField,UpdatedWaterMarkField
+1,MigrationTestDB,dbo,Employees,MigrationTestDB_dbo,Employees,,NULL,NULL
+2,TestDB,dbo,Customers,TestDB_dbo,Customers,,CreatedDate,ModifiedDate
+3,MigrationTestDB,dbo,Customers,MigrationTestDB_dbo,Customers,,CreatedDate,NULL
+4,MigrationTestDB,dbo,Orders,MigrationTestDB_dbo,Orders,,CreatedDate,ModifiedDate
+5,TestDB,dbo,Orders,TestDB_dbo,Orders,,NULL,ModifiedDate
+6,MigrationTestDB,dbo,OrderDetails,MigrationTestDB_dbo,OrderDetails,,NULL,NULL
+7,MigrationTestDB,dbo,Products,MigrationTestDB_dbo,Products,,NULL,ModifiedDate
